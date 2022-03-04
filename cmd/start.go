@@ -4,7 +4,7 @@
  * @Author: seaslog
  * @Date: 2022-03-04 15:26:58
  * @LastEditors: 谢余华
- * @LastEditTime: 2022-03-04 15:29:28
+ * @LastEditTime: 2022-03-04 17:04:02
  */
 package cmd
 
@@ -58,6 +58,6 @@ func Execute(watcher func(config.Flags)) {
 
 func init() {
 	rootCmd.PersistentFlags().IntVarP(&flags.Cycle, "pushCycle", "c", 5, "git push once time each %n seconds; the default is 5s")
-	rootCmd.PersistentFlags().StringVarP(&flags.Path, "path", "p", "", "input the path you want to watch as the flag")
+	rootCmd.PersistentFlags().StringVarP(&flags.Path, "path", "p", "./", "input the path you want to watch as the flag;  the default is ./")
 	//rootCmd.AddCommand(cycleCmd)
 }
