@@ -4,7 +4,7 @@
  * @Author: seaslog
  * @Date: 2022-03-04 15:26:58
  * @LastEditors: 谢余华
- * @LastEditTime: 2022-03-04 15:27:34
+ * @LastEditTime: 2022-03-04 17:06:44
 -->
 
 # [Supported]
@@ -26,7 +26,7 @@ Usage:
 
 Flags:
   -h, --help            help for fsnotifyGit
-  -p, --path string     input the path you want to watch as the flag
+  -p, --path string     input the path you want to watch as the flag; the default is ./ (default ./)
   -c, --pushCycle int   git push once time each %n seconds; the default is 5s (default 5)
 ```
 
