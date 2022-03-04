@@ -55,7 +55,7 @@ func ExampleNewWatcher(flags config.Flags) {
 		for {
 			select {
 			case event := <-watcher.Events:
-				log.Println("event:", event)
+				// log.Println("event:", event)
 
 				if regexp.MustCompile(`\.git$`).MatchString(event.Name) == true {
 					continue
