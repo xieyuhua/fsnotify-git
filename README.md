@@ -4,7 +4,7 @@
  * @Author: seaslog
  * @Date: 2022-03-04 15:26:58
  * @LastEditors: 谢余华
- * @LastEditTime: 2022-03-05 09:09:46
+ * @LastEditTime: 2022-03-05 09:11:31
 -->
 
 # [Supported]
@@ -110,8 +110,7 @@ git reset --hard xieyuhuagithub/master
 //强推到远程：
 git add .
 git commit -m '回滚之后强制提交'
-git push xieyuhuagithub HEAD --force  
-//回滚节点之后的提交内容都没有了
+git push xieyuhuagithub HEAD --force  //强制执行回滚之后、之前提交内容都没有了
 
 
 //修改仓库名称
