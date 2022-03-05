@@ -4,7 +4,7 @@
  * @Author: seaslog
  * @Date: 2022-03-04 15:26:58
  * @LastEditors: 谢余华
- * @LastEditTime: 2022-03-04 17:06:44
+ * @LastEditTime: 2022-03-05 09:08:17
 -->
 
 # [Supported]
@@ -36,9 +36,6 @@ Flags:
 The filepath should be the git repository.
 
 And the .git directory will be ignored.
-
-
-# [usage]
 
 # Git：git pull每次都要求输入用户名和密码
 
