@@ -4,7 +4,7 @@
  * @Author: seaslog
  * @Date: 2022-03-04 15:26:58
  * @LastEditors: 谢余华
- * @LastEditTime: 2022-03-05 09:15:01
+ * @LastEditTime: 2022-03-05 09:18:38
 -->
 
 # [Supported]
@@ -83,7 +83,7 @@ git add .
 git commit -m 'update .gitignore'
 ```
 
-## 梳理一下git命令
+## 回滚梳理一下git命令
 
 ```
 git init //初始化仓库
