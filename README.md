@@ -41,6 +41,7 @@ And the .git directory will be ignored.
 # Git：git pull每次都要求输入用户名和密码
 
 全局配置
+
 git config --global credential.helper store
 git config --global -e
 下次pull的时候输一次密码以后就不用输了
