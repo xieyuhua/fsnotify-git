@@ -81,7 +81,7 @@ git add .
 git commit -m 'update .gitignore'
 ```
 
-# 梳理一下git命令
+## 梳理一下git命令
 
 ```
 git init //初始化仓库
