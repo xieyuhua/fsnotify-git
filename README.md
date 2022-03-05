@@ -4,7 +4,7 @@
  * @Author: seaslog
  * @Date: 2022-03-04 15:26:58
  * @LastEditors: 谢余华
- * @LastEditTime: 2022-03-05 09:08:17
+ * @LastEditTime: 2022-03-05 09:09:46
 -->
 
 # [Supported]
@@ -59,7 +59,7 @@ git config --global credential.helper wincred
 清除掉缓存在git中的用户名和密码
 git credential-manager uninstall
 
-
+```
 vim .gitignore
 /*
 !.gitignore
@@ -71,17 +71,19 @@ vim .gitignore
 /fw/*
 !/fw/bin/
 !/fw/sf/
+```
 说明：忽略全部内容，但是不忽略 .gitignore 文件、根目录下的 /fw/bin/ 和 /fw/sf/ 
 目录；注意要先对bin/的父目录使用!规则，使其不被排除。
 
-
+```
 git rm -r --cached .  //清除之前的文件
 git add .
 git commit -m 'update .gitignore'
-
+```
 
 # 梳理一下git命令
 
+```
 git init //初始化仓库
 git add .//添加暂存
 git commit -m 'msg'//备注
@@ -115,3 +117,4 @@ git push xieyuhuagithub HEAD --force
 //修改仓库名称
 git remote rm xieyuhuagithub  //删除仓库
 git remote rename xieyuhuagithub new_name //修改仓库名
+```
