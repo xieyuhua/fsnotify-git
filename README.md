@@ -42,13 +42,19 @@ And the .git directory will be ignored.
 
 全局配置
 
+```
 git config --global credential.helper store
 git config --global -e
+```
+
 下次pull的时候输一次密码以后就不用输了
 
 如果要清除用户名和密码
 运行一下命令缓存输入的用户名和密码
+
+```
 git config --global credential.helper wincred
+```
 
 清除掉缓存在git中的用户名和密码
 git credential-manager uninstall
