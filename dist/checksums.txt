@@ -1,0 +1,8 @@
+3e3e11df6de36598ef80593a4b7689019076f46ca1b5a60bdc96ad9934b7d432  fsnotify-git_0.0.1-next_Linux_arm64.tar.gz
+54bfdfbbec15a15728971d7c3e4d6edeef8bdbdca4b5287031e9bd451b706d51  fsnotify-git_0.0.1-next_Darwin_x86_64.tar.gz
+568dafc6599071581fcee05e4fbea250ed9180a919b3dd0dbd7f202ddc9dc35d  fsnotify-git_0.0.1-next_Windows_arm64.tar.gz
+6471a55859867d6272a469270cc8b8d8a4106c0df160a4bbb9c80a7363813142  fsnotify-git_0.0.1-next_Linux_i386.tar.gz
+86075305f98d8fc406950f345310a828bf48d030325d0cfe6260e374a2896615  fsnotify-git_0.0.1-next_Darwin_arm64.tar.gz
+c5cec5a6e6e8d5c565f8983ca6be0c160751c6f87c733da7877cea8c25632d55  fsnotify-git_0.0.1-next_Windows_i386.tar.gz
+de50c7a44a73e7a2ef5756f6247486c95a3252e863dfa3a62aaf36f5b0a8c05e  fsnotify-git_0.0.1-next_Windows_x86_64.tar.gz
+f3afe3276d7385fb01347cb229e1e30e2d157b11693c19246275aae055c59178  fsnotify-git_0.0.1-next_Linux_x86_64.tar.gz
