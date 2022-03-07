@@ -4,7 +4,7 @@
  * @Author: seaslog
  * @Date: 2022-03-04 15:26:58
  * @LastEditors: 谢余华
- * @LastEditTime: 2022-03-05 09:18:38
+ * @LastEditTime: 2022-03-07 10:52:45
 -->
 
 # [Supported]
@@ -30,6 +30,70 @@ Flags:
   -c, --pushCycle int   git push once time each %n seconds; the default is 5s (default 5)
 ```
 
+
+1、 Windows主机编译Linux,MAC客户端
+
+```
+# Windows主机编译Windows客户端
+SET CGO_ENABLED=0
+SET GOOS=windows
+SET GOARCH=amd64
+go build -o abc-demo-windows.exe main.go
+
+# Windows主机编译LINUX客户端
+SET CGO_ENABLED=0
+SET GOOS=linux
+SET GOARCH=amd64
+go build -o abc-demo-linux main.go
+
+# Windows主机编译MAC客户端
+SET CGO_ENABLED=0
+SET GOOS=darwin
+SET GOARCH=amd64
+go build -o abc-demo-mac main.go
+
+```
+
+2、Linux主机编译Widows,MAC客户端
+
+
+```
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o abc-demo-linux main.go
+CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build -o adc-demo-mac main.go
+CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -o abc-demo-windows.exe main.go
+
+```
+
+3、MAC主机编译Widows,linux客户端
+
+
+```
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o abc-demo-linux main.go
+CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build -o abc-demo-mac main.go
+CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -o abc-demo-windows.exe main.go
+
+```
+
+4、多平台一键打包
+
+
+go get -u -v github.com/goreleaser/goreleaser
+
+安装后执行 goreleaser -v 命令判断是否安装成功
+
+然后在该项目根目录执
+
+```
+goreleaser init 
+```
+
+将会生成一个.goreleaser.yml配置文件
+
+```
+go mod vendor
+
+goreleaser --snapshot --skip-publish --rm-dist
+```
 
 # [Tips]
 
@@ -72,6 +136,7 @@ vim .gitignore
 !/fw/bin/
 !/fw/sf/
 ```
+
 说明：忽略全部内容，但是不忽略 .gitignore 文件、根目录下的 /fw/bin/ 和 /fw/sf/ 
 目录；注意要先对bin/的父目录使用!规则，使其不被排除。
 
@@ -113,4 +178,15 @@ git push xieyuhuagithub HEAD --force  //强制执行回滚之后、之前提交�
 //修改仓库名称
 git remote rm xieyuhuagithub  //删除仓库
 git remote rename xieyuhuagithub new_name //修改仓库名
+
+
+//新建文件时候
+one：
+git push --set-upstream origin master
+git pull --rebase origin master     本地生成ReadMe文件
+git push origin master
+two：
+那我就强制上传覆盖远程文件，
+git push -f origin master
+(这个命令在团队开发的时候最好不要用,否则可能会有生命危险)
 ```
